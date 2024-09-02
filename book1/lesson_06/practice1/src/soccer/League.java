@@ -29,11 +29,11 @@ public class League {
 
 //        player1.playerName="Robert Service";
         for (Player thePlayer : team1.playerArray) {
-            System.out.println(thePlayer.playerName);
+            System.out.println("Team 1: "+thePlayer.playerName);
         }
 
         for (Player thePlayer : team2.playerArray) {
-            System.out.println(thePlayer.playerName);
+            System.out.println("Team2: "+thePlayer.playerName);
         }
     }
 }

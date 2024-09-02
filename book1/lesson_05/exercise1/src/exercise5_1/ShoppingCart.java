@@ -9,7 +9,7 @@ public class ShoppingCart {
 
 	// numeric fields
         double price = 21.99;
-        int quantity = 2;
+        int quantity = 1;
         double tax = 1.04;
 	double total;
 	String message = custName+" wants to purchase "+quantity+" "+itemDesc;
@@ -24,6 +24,8 @@ public class ShoppingCart {
         // Test quantity and modify message if quantity > 1.  
          if(quantity>1){
              message = message +"s";
+             System.out.println(message);
+         }else {
              System.out.println(message);
          }
 
