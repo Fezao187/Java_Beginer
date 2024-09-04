@@ -66,6 +66,4 @@ public class League {
         Game[] theGames = {theGame};
         return theGames;
     }
-
-
 }
