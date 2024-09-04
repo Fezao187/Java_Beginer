@@ -26,6 +26,26 @@ public class Order {
 
     // Code the calcDiscount method.
     public void calcDiscount() {
-         
+         if(this.custType == NONPROFIT) {
+            if(total>900){
+                this.discount = 10;
+            }else{
+                this.discount=5;
+            }
+         } else if (this.custType ==PRIVATE) {
+             if(total>900){
+                 this.discount = 5;
+             }else{
+                 this.discount=0;
+             }
+         }else if(this.custType == CORP) {
+             if(total<500){
+                 this.discount=8;
+             }else {
+                 this.discount=5;
+             }
+         }else {
+             this.discount=0;
+         }
     }
 }
