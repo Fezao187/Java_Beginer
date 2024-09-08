@@ -13,7 +13,7 @@ public class TestClass {
         x = ((y / x )< 3) ? (x += y) : (x *= y);
         System.out.println("After if stmt, x = " + x);
 
-        // Use a ter nary operator to perform the same logic as above.
+        // Use a ternary operator to perform the same logic as above.
 
     }
 }
