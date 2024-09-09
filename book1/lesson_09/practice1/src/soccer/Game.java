@@ -17,7 +17,8 @@ public class Game {
     private Team homeTeam;
     private Team awayTeam;
     private Goal[] goals;
-    
+    private String strName;
+
     public void playGame(int maxGoals) {
         /* Practice 8-2. Add code to initialize the array currGame.goals to a random size */
         int numberOfGoals = (int)(Math.random() * maxGoals + 1);
@@ -64,5 +65,13 @@ public class Game {
 
     public void setGoals(Goal[] goals) {
         this.goals = goals;
+    }
+
+    public String getStrName() {
+        return strName;
+    }
+
+    public void setStrName(String strName) {
+        this.strName = strName;
     }
 }
