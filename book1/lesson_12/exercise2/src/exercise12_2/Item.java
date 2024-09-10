@@ -1,4 +1,4 @@
-package exercise12_1;
+package exercise12_2;
 
 public class Item {
     private int id;
@@ -6,25 +6,27 @@ public class Item {
     private double price;
     static int nextId = 1;
     
+    // Default constructor sets default values
     public Item(){
-    // set default values
         setId();
         setDesc("No description assigned.");
         setPrice(0.00);
     }
     
+    // Overloaded constructor takes description and price
     public Item(String desc, double price) {
         setId();
         setDesc(desc);
         setPrice(price);
     }
-
+    
     public void display(){
         System.out.println("exercise12_2.Item description: "+getDesc());
         System.out.println("\tID: "+getId());
         System.out.println("\tPrice: "+getPrice());
     }
 
+    // Getter and Setter methods
     private void setId() {
         id = Item.nextId++;
     }
@@ -47,5 +49,6 @@ public class Item {
 
     private void setPrice(double price) {
         this.price = price;
-    }    
+    }
+    
 }

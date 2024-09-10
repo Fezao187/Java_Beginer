@@ -5,7 +5,7 @@ public class Shirt extends Item{
     private char size;
 
     public Shirt(double price, char colorCode, char size) {
-        super("Shirt", price);
+        super("exercise12_2.Shirt", price);
         this.colorCode = colorCode;
         this.size = size;
     }

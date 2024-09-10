@@ -9,7 +9,7 @@ public class Item {
     char colorCode = 'U';   //'U' = Undetermined
 
     public void displayItem() {
-        System.out.println("Item: " + desc + ", " + quantity + ", "
+        System.out.println("exercise12_2.Item: " + desc + ", " + quantity + ", "
                 + price + ", "+colorCode);
     }
 

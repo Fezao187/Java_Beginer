@@ -4,7 +4,7 @@ package exercise11_3;
 import exercise11_3.Item;
 
 public class ShoppingCart {
-    Item[] items = {new Item("Shirt",25.60),
+    Item[] items = {new Item("exercise12_2.Shirt",25.60),
                     new Item("WristBand",0), 
                     new Item("Pants",35.99)};
     
@@ -18,7 +18,7 @@ public class ShoppingCart {
     public void displayTotal(){
         double total = 0.0;
         for(int i = 0; i < items.length; i++){
-            System.out.println("Item: "+ items[i].getDesc() + "\nPrice: " + items[i].getPrice() +"\n");
+            System.out.println("exercise12_2.Item: "+ items[i].getDesc() + "\nPrice: " + items[i].getPrice() +"\n");
             if(items[i].isBackOrdered()){
                 continue;
             }else {

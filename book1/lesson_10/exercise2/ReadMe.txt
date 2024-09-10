@@ -10,6 +10,6 @@ In the Order class:
      - Corporate types get 8% if order < 500, otherwise they get 5%.
      - Use nested and chained if statement
 
-In the ShoppingCart class:
+In the exercise12_2.ShoppingCart class:
 3. Examine the code.  This class needs no modification.
-4. Run the ShoppingCart to test the order.calcDiscount method. 
+4. Run the exercise12_2.ShoppingCart to test the order.calcDiscount method.

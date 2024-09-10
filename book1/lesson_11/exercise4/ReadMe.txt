@@ -1,6 +1,6 @@
 Exercise 11-4
 
-1. In the main method of ShoppingCart, declare, instantiate, 
+1. In the main method of exercise12_2.ShoppingCart, declare, instantiate,
      and initialize at least 3 elements in an ArrayList of Strings.  
 2. Print the ArrayList and run it to test your code.  
 3. Fix the error by adding an import statement.

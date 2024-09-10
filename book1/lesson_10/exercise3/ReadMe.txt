@@ -6,4 +6,4 @@ In the Order class:
      For better performance, use a break statement in each case block.
      Include a default block to handle invalid custType values.
 
-2. Run the ShoppingCart class again to test your logic.
+2. Run the exercise12_2.ShoppingCart class again to test your logic.

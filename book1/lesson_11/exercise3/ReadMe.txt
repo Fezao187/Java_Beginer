@@ -1,6 +1,6 @@
 Exercise 11-3
 
-In the ShoppingCart class:
+In the exercise12_2.ShoppingCart class:
 1.  Code the displayTotal method.  Use a standard for loop to 
       iterate through the items array.
 2.  If the current item is out of stock (call isOutOfStock method of 
