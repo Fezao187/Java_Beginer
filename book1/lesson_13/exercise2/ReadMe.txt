@@ -1,4 +1,3 @@
-Exercise 13-2
 
 (The exercise12_2.Item, exercise12_2.Shirt, and Trousers classes are provided.  exercise12_2.Item and exercise12_2.Shirt are very similar to exercise 12-3)
 
