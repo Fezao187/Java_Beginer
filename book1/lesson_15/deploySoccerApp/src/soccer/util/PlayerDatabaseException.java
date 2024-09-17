@@ -4,15 +4,16 @@
  * and open the template in the editor.
  */
 
-package soccer;
+package soccer.util;
 
 /**
  *
- * @author Administrator
+ * @author ksomervi
  */
-public class Goal extends GameEvent {
+public class PlayerDatabaseException extends Exception{
     
-        public String toString(){
-        return "Goal scored";
+    public PlayerDatabaseException(String message){
+        super(message);
     }
+    
 }

@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 
-package utility;
+package soccer.util;
 
 import java.util.*;
-import soccer.Player;
+import soccer.play.Player;
 
 
 
@@ -26,21 +26,18 @@ public class PlayerDatabase {
             players.add(new Player(authorTokens.nextToken()));
         }
     }
-    /* Practice 14-1, Step 6d. Modify the signature to throw PlayerDatabaseException */
-    public Player[] getTeam(int numberOfPlayers) throws PlayerDatabaseException{
+    
+    public Player[] getTeam(int numberOfPlayers) throws PlayerDatabaseException {
         Player[] teamPlayers = new Player[numberOfPlayers];
         for (int i = 0; i < numberOfPlayers; i++){
             int playerIndex = (int) (Math.random() * players.size());
-            
-            /* Practice 14-1, Step 6b. Start a try block here */
             try {
-                teamPlayers[i] = players.get(playerIndex);
-                players.remove(playerIndex);
-                /* Practice 14-1, Step 6b. End the try block here */
-            }catch (IndexOutOfBoundsException e){
-                throw new PlayerDatabaseException("Not enough players for the database requested");
+            teamPlayers[i] = players.get(playerIndex);
+            players.remove(playerIndex);
             }
-            /* Practice 14-1, Step 6c. Add catch block here */
+            catch(IndexOutOfBoundsException ie){
+                throw new PlayerDatabaseException("Not enough players in the database for the teams requested.");
+            }
         }
         return teamPlayers;
         
@@ -57,7 +54,7 @@ String authorList =
 "Baroness Orczy," +          
 "Brendan Behan," +      
 "Brian Moore," +
-"Boris Pasternik," +
+"Boris Pasternak," +
 "Charles Dickens," +    
 "Charlotte Bronte," +
 "Dorothy Parker," +

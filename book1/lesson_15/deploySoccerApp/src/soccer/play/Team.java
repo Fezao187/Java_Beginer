@@ -4,18 +4,23 @@
  * and open the template in the editor.
  */
 
-package soccer;
+package soccer.play;
+
+import soccer.event.GameEvent;
 
 /**
  *
  * @author Administrator
  */
-public class Team implements Comparable {
+public class Team implements Comparable, IDisplayDataItem {
     
     private String teamName;
     private Player[] playerArray;
     private int pointsTotal;
     private int goalsTotal;
+    private boolean detailAvailable = false;
+    private int id = 0;
+    private String detailType = "Team";
     
     public int compareTo(Object theTeam){
         int returnValue = -1;
@@ -103,5 +108,71 @@ public class Team implements Comparable {
     public void setGoalsTotal(int goalsTotal) {
         this.goalsTotal = goalsTotal;
     }
+    
+    public String toString(){
+        return teamName;
+    }
+    
+    // Remainder is displayDetailStuff
+    
+    public String getDisplayDetail(){
+        return teamName;
+    }
+    public boolean isDetailAvailable (){
+        return detailAvailable;
+    }
+    public int getID(){
+        return id;
+    }
+    public String getDetailType() {
+        return detailType;
+    }
+
+    /**
+     * @param detailAvailable the detailAvailable to set
+     */
+    public void setDetailAvailable(boolean detailAvailable) {
+        this.detailAvailable = detailAvailable;
+    }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    /**
+     * @return the getDetailType
+     */
+    public String getGetDetailType() {
+        return detailType;
+    }
+
+    /**
+     * @param getDetailType the getDetailType to set
+     */
+    public void setGetDetailType(String detailType) {
+        this.detailType = detailType;
+    }
+    
+    
+    // Below code shows random selection of attempt
+    public GameEvent getNextPlayAttempt(GameEvent currEvent){
+        
+        GameEvent[] possEvents = currEvent.getNextEvents();
+        currEvent = possEvents[(int) (Math.random()
+                * (possEvents.length))];
+        
+        return currEvent;
+    }
+    
     
 }
