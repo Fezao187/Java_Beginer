@@ -1,14 +1,14 @@
-package listing7_1;
-// Tick Tock with an Inner Class
+package listing7_2;
+//Tick Tock with a Static Inner Class
 import java.awt.event.*;
 import javax.swing.*;
-public class TickTockInner
+public class TickTockStatic
 {
-    private String tickMessage = "Tick...";
-    private String tockMessage = "Tock...";
+    private static String tickMessage = "Tick...";
+    private static String tockMessage = "Tock...";
     public static void main(String[] args)
     {
-        TickTockInner t = new TickTockInner();
+        TickTockStatic t = new TickTockStatic();
         t.go();
     }
     private void go()
@@ -23,13 +23,17 @@ public class TickTockInner
                 "Click OK to exit program");
         System.exit(0);
     }
-    class Ticker implements ActionListener {
+    static class Ticker implements ActionListener
+    {
         private boolean tick = true;
-
-        public void actionPerformed(ActionEvent event) {
-            if (tick) {
+        public void actionPerformed(
+                ActionEvent event){
+            if (tick)
+            {
                 System.out.println(tickMessage);
-            } else {
+            }
+            else
+            {
                 System.out.println(tockMessage);
             }
             tick = !tick;
