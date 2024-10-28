@@ -11,8 +11,7 @@ public class BoboAndTheLockers {
             System.out.println("Bobo is changing every "
                     + skip + " lockers.");
             for (int locker = skip; locker < 1000;
-                 locker
-                         += skip)
+                 locker += skip)
                 lockers[locker] = !lockers[locker];
         }
         System.out.println("Bobo is bored"
@@ -23,8 +22,7 @@ public class BoboAndTheLockers {
         for (int i = 1; i <= 1000; i++)
             if (lockers[i]) {
                 openCount++;
-                list
-                        += i + " ";
+                list += i + " ";
             }
         System.out.println("Bobo left " + openCount
                 + " lockers open.");

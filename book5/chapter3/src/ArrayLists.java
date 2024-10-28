@@ -11,9 +11,9 @@ public class ArrayLists {
         signs.add("7-Up: You Like It, It Likes You");
         signs.add("Dr. Pepper 10, 2, 4");
 // Deleting arrays
-        signs.clear();
+//        signs.clear();
         signs.remove("Drink Pepsi");
-        signs.remove(3);
+//        signs.remove(3);
 //        Printing arrays
         for (String s : signs) {
             System.out.println(s);
